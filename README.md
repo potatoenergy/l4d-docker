@@ -58,7 +58,7 @@ docker run -d --name l4d-server \
   -e L4D_PORT=27015 \
   -e L4D_SOURCETVPORT="27020" \
   -e L4D_TICKRATE="" \
-  -v /home/ponfertato/Docker/l4d-server:/home/steam/left4dead-server/l4d \
+  -v /home/ponfertato/Docker/l4d-server:/home/steam/l4d-server/l4d \
   ponfertato/l4d:latest
 ```
 
@@ -88,7 +88,7 @@ services:
       - L4D_SOURCETVPORT="27020"
       - L4D_TICKRATE=""
     volumes:
-      - ./l4d-server:/home/steam/left4dead-server/l4d
+      - ./l4d-server:/home/steam/l4d-server/l4d
 ```
 
 **Health Check**
